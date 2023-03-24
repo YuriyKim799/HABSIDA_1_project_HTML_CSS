@@ -551,7 +551,7 @@ body {
   }
 
   .form-small-text::before {
-    margin-left: 25px;
+    margin-left: 55px;
   }
 
   .form-inputs {
@@ -559,7 +559,7 @@ body {
   }
 
   .input-form-info {
-    padding: 20px 155px 8px 10px;
+    padding: 20px 165px 8px 10px;
   }
 
   .form-checkbox-container {
