@@ -1,0 +1,591 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url(/fonts/barlow//Barlow-Light.ttf) format('ttf'), url(/fonts/barlow/Barlow-Light.woff) format('woff');
+  ;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url(/fonts/barlow/Barlow-Regular.ttf) format('ttf'), url(/fonts/barlow/Barlow-Regular.woff) format('woff');
+  ;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url(/fonts/barlow/Barlow-Bold.ttf) format('ttf'), url(/fonts/barlow/Barlow-Bold.woff) format('woff');
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Barlow';
+  background-color: #EFF6FF;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 1440px;
+  height: 100vh;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.main-wrap {
+  display: flex;
+  gap: 70px;
+  height: 100%;
+}
+
+.main-logo {
+  width: 750px;
+  padding: 29px 50px;
+  display: flex;
+  background-image: url('/image/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vh;
+}
+
+.main-logo-title {
+  color: #fff;
+  font-size: 42px;
+  letter-spacing: -2px;
+  font-weight: 400;
+}
+
+.logo-double-zero {
+  letter-spacing: -7px;
+}
+
+.logo-text-wrapper {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 8px;
+  padding-left: 10px;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 10px;
+}
+
+.main-form {
+  padding-top: 40px;
+  width: 750px;
+}
+
+.main-form-title {
+  font-size: 36px;
+  color: #2A4A5C;
+  padding-bottom: 15px;
+}
+
+.main-form-desc {
+  font-size: 22px;
+  color: #7B8A92;
+  padding-bottom: 40px;
+}
+
+.form-buttons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.form-button-facebook {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #255A9B;
+  border: none;
+  padding: 15px 70px 15px 25px;
+  transition: all 0.2s;
+}
+
+.form-button-facebook:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.form-button-facebook:active {
+  background-color: #0076B6;
+}
+
+.form-button-linkedin {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #0076B6;
+  border: none;
+  padding: 15px 70px 15px 25px;
+  transition: all 0.2s;
+}
+
+.form-button-linkedin:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.form-button-linkedin:active {
+  background-color: #255A9B;
+}
+
+.form-small-text {
+  padding: 50px;
+  font-size: 12px;
+  color: #2A4A5C;
+}
+
+.form-small-text::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #EEEEEE;
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-right: 10px;
+  margin-left: 140px;
+}
+
+.form-small-text::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #EEEEEE;
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+.form-inputs {
+  display: flex;
+  gap: 40px;
+}
+
+.input-form-info {
+  padding: 20px 105px 8px 10px;
+  border: 1px solid #EFF6FF;
+  transition: all 0.1s;
+}
+
+.input-form-info:focus {
+  outline: none;
+  border-left: 1px solid #3698FB;
+}
+
+.input-form-info:hover {
+  cursor: pointer;
+}
+
+.input-form-email,
+.input-form-phone {
+  position: relative;
+}
+
+.input-form-email-span,
+.input-form-phone-span {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  color: #AFAFAF;
+  font-size: 14px;
+}
+
+.main-secondary-form-text {
+  padding-top: 60px;
+}
+
+.main-form-secondary-title {
+  color: #2A4A5C;
+  font-size: 25px;
+}
+
+.main-form-secondary-desc {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  color: #7B8A92;
+  font-size: 17px;
+}
+
+.form-checkbox-container {
+  display: flex;
+  gap: 50px;
+}
+
+.info-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-label {
+  padding-left: 10px;
+  font-weight: 500;
+  color: #2A4A5C;
+  font-size: 22px;
+}
+
+.form-text-features {
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 25px;
+  width: 270px;
+  color: #AFAFAF;
+  border: 1px solid transparent;
+  padding: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-confirming {
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.confirming-text {
+  color: #AFAFAF;
+  font-size: 16px;
+}
+
+.link-confirming {
+  color: #3698FB;
+}
+
+.button-confirm {
+  background-color: #3698FB;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  margin-top: 60px;
+  padding: 15px 85px 15px 85px;
+  border-radius: 5px;
+  border: 1px solid #3698FB;
+  transition: all 0.3s;
+}
+
+.button-confirm:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #3698FB;
+}
+
+.button-confirm:active {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1439px) {
+  .wrap {
+    max-width: 1024px;
+  }
+
+  .main-wrap {
+    gap: 25px;
+  }
+  .main-logo {
+    width: 500px;
+    background-size: cover;
+  }
+  .main-logo-title {
+    font-size: 38px;
+  }
+
+  .logo-double-zero {
+    letter-spacing: -4px;
+  }
+
+  .logo-text-wrapper {
+    padding-top: 18px;
+    padding-left: 7px;
+  }
+
+  .logo-text {
+    font-size: 8px;
+  }
+
+  .main-form {
+    padding-top: 50px;
+    max-width: 500px;
+    padding-left: 10px;
+  }
+
+  .main-form-title {
+    font-size: 26px;
+    padding-bottom: 14px;
+  }
+
+  .main-form-desc {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+
+  .form-buttons {
+    gap: 20px;
+  }
+
+  .form-button-facebook {
+    gap: 8px;
+    font-size: 12px;
+    padding: 15px 50px 15px 15px;
+  }
+
+  .form-button-linkedin {
+    gap: 8px;
+    font-size: 12px;
+    padding: 15px 50px 15px 15px;
+  }
+
+  .form-small-text {
+    padding: 50px;
+  }
+
+  .form-small-text::before {
+    margin-left: 60px;
+  }
+
+  .form-inputs {
+    gap: 20px;
+  }
+
+  .input-form-info {
+    padding: 17px 35px 8px 10px;
+  }
+
+  .main-secondary-form-text {
+    padding-top: 50px;
+  }
+
+  .main-form-secondary-title {
+    font-size: 18px;
+  }
+
+  .main-form-secondary-desc {
+    font-size: 12px;
+  }
+
+  .form-checkbox-container {
+    gap: 20px;
+  }
+
+  .radio-label {
+    font-size: 18px;
+  }
+
+  .form-text-features {
+    font-size: 11px;
+    margin-top: 20px;
+    width: 200px;
+    padding: 8px;
+  }
+
+  .form-confirming {
+    margin-top: 50px;
+    gap: 8px;
+  }
+
+  .confirming-text {
+    font-size: 12px;
+  }
+
+  .button-confirm {
+    font-size: 15px;
+    margin-top: 50px;
+    padding: 15px 55px 15px 55px;
+  }
+}
+
+@media (max-width: 1022px) {
+  .wrap {
+   max-width: 768px;
+  }
+
+  .main-logo {
+    width: 375px;
+    background-position-x: -100px;
+  }
+
+  .main-logo-title {
+    font-size: 24px;
+  }
+
+  .logo-text-wrapper {
+    padding-top: 9px;
+    padding-left: 5px;
+  }
+
+  .logo-text {
+    font-size: 6px;
+  }
+
+  .main-form {
+    padding-top: 40px;
+    width: 300px;
+    height: 100vh;
+  }
+
+  .main-form-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .main-form-desc {
+    font-size: 13px;
+    padding-bottom: 20px;
+  }
+
+  .form-buttons {
+    gap: 17px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-button-facebook {
+    gap: 7px;
+    font-size: 12px;
+    padding: 10px 40px 10px 10px;
+  }
+
+  .form-button-linkedin {
+    gap: 7px;
+    font-size: 12px;
+    padding: 10px 40px 10px 18px;
+  }
+
+  .form-small-text {
+    padding: 25px;
+  }
+  .form-small-text::before {
+    width: 75px;
+    margin-left: -16px;
+  }
+  .form-small-text::after {
+    width: 75px;
+  }
+
+  .form-inputs {
+    flex-wrap: wrap;
+    gap: 17px;
+  }
+
+  .input-form-info {
+    padding: 17px 15px 8px 10px;
+  }
+  .main-secondary-form-text {
+    padding-top: 25px;
+  }
+
+  .main-form-secondary-title {
+    font-size: 16px;
+  }
+
+  .main-form-secondary-desc {
+    font-size: 11px;
+  }
+
+  .form-checkbox-container {
+    gap: 5px;
+  }
+
+  .radio-label {
+    padding-left: 2px;
+    font-size: 10px;
+  }
+
+  .form-text-features {
+    width: 175px;
+    padding: 6px;
+  }
+
+  .confirming-text {
+    font-size: 11px;
+  }
+
+  .button-confirm {
+    font-size: 13px;
+    margin-top: 40px;
+    padding: 15px 50px 15px 50px;
+  }
+}
+
+@media (max-width: 766px) {
+  .wrap {
+    width: 375px;
+
+  }
+
+  .main-wrap {
+    background: none;
+  }
+
+  .main-logo {
+    display: none;
+  }
+
+  .main-form {
+    width: 350px;
+    padding-left: 15px;
+  }
+
+  .form-button-facebook {
+    gap: 5px;
+    font-size: 11px;
+    padding: 10px 14px 10px 10px;
+  }
+
+  .form-button-linkedin {
+    gap: 5px;
+    font-size: 11px;
+    padding: 10px 14px 10px 10px;
+  }
+
+  .form-small-text::before {
+    margin-left: 25px;
+  }
+
+  .form-inputs {
+    flex-wrap: wrap;
+  }
+
+  .input-form-info {
+    padding: 20px 155px 8px 10px;
+  }
+
+  .form-checkbox-container {
+    gap: 8px;
+  }
+
+  .radio-label {
+    padding-left: 5px;
+    font-size: 15px;
+  }
+
+  .form-text-features {
+    font-size: 16px;
+    font-weight: 200;
+    width: 320px;
+    padding: 10px;
+  }
+
+  .confirming-text {
+    color: #AFAFAF;
+    font-size: 16px;
+  }
+
+  .button-confirm {
+
+    font-size: 18px;
+
+    padding: 15px 105px 15px 105px;
+
+
+  }
+}
