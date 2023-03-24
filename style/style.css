@@ -47,7 +47,7 @@ body {
   width: 750px;
   padding: 29px 50px;
   display: flex;
-  background-image: url('/image/bg.jpg');
+  background-image: url(/image/bg.jpg);
   background-repeat: no-repeat;
   background-size: 100vh;
 }
