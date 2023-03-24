@@ -31,25 +31,23 @@ body {
 }
 
 .wrap {
-  max-width: 1440px;
-  height: 100vh;
+  max-width: 1340px;
   background-color: #fff;
   margin: 0 auto;
 }
 
 .main-wrap {
   display: flex;
-  gap: 70px;
-  height: 100%;
+  gap: 20px;
 }
 
 .main-logo {
-  width: 750px;
+  width: 600px;
   padding: 29px 50px;
   display: flex;
   background-image: url(/image/bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100vh;
+  background-size: contain;
 }
 
 .main-logo-title {
@@ -77,26 +75,26 @@ body {
 }
 
 .main-form {
-  padding-top: 40px;
-  width: 750px;
+  padding-top: 90px;
+  width: 600px;
 }
 
 .main-form-title {
-  font-size: 36px;
+  font-size: 24px;
   color: #2A4A5C;
   padding-bottom: 15px;
 }
 
 .main-form-desc {
-  font-size: 22px;
+  font-size: 14px;
   color: #7B8A92;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .form-buttons {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .form-button-facebook {
@@ -107,7 +105,7 @@ body {
   color: #fff;
   background-color: #255A9B;
   border: none;
-  padding: 15px 70px 15px 25px;
+  padding: 12px 50px 12px 25px;
   transition: all 0.2s;
 }
 
@@ -128,7 +126,7 @@ body {
   font-size: 15px;
   background-color: #0076B6;
   border: none;
-  padding: 15px 70px 15px 25px;
+  padding: 12px 50px 12px 25px;
   transition: all 0.2s;
 }
 
@@ -142,7 +140,7 @@ body {
 }
 
 .form-small-text {
-  padding: 50px;
+  padding: 40px;
   font-size: 12px;
   color: #2A4A5C;
 }
@@ -155,7 +153,7 @@ body {
   display: inline-block;
   margin-bottom: 4px;
   margin-right: 10px;
-  margin-left: 140px;
+  margin-left: 125px;
 }
 
 .form-small-text::after {
@@ -170,11 +168,11 @@ body {
 
 .form-inputs {
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 
 .input-form-info {
-  padding: 20px 105px 8px 10px;
+  padding: 20px 82px 8px 10px;
   border: 1px solid #EFF6FF;
   transition: all 0.1s;
 }
@@ -203,19 +201,19 @@ body {
 }
 
 .main-secondary-form-text {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .main-form-secondary-title {
   color: #2A4A5C;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .main-form-secondary-desc {
   padding-top: 10px;
   padding-bottom: 40px;
   color: #7B8A92;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .form-checkbox-container {
@@ -232,14 +230,14 @@ body {
   padding-left: 10px;
   font-weight: 500;
   color: #2A4A5C;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .form-text-features {
   font-size: 14px;
   font-weight: 200;
   margin-top: 25px;
-  width: 270px;
+  width: 243px;
   color: #AFAFAF;
   border: 1px solid transparent;
   padding: 10px;
@@ -271,6 +269,7 @@ body {
   border-radius: 5px;
   border: 1px solid #3698FB;
   transition: all 0.3s;
+  margin-bottom: 80px;
 }
 
 .button-confirm:hover {
@@ -291,10 +290,12 @@ body {
   .main-wrap {
     gap: 25px;
   }
+
   .main-logo {
     width: 500px;
     background-size: cover;
   }
+
   .main-logo-title {
     font-size: 38px;
   }
@@ -405,7 +406,7 @@ body {
 
 @media (max-width: 1022px) {
   .wrap {
-   max-width: 768px;
+    max-width: 768px;
   }
 
   .main-logo {
@@ -429,7 +430,6 @@ body {
   .main-form {
     padding-top: 40px;
     width: 300px;
-    height: 100vh;
   }
 
   .main-form-title {
@@ -463,10 +463,12 @@ body {
   .form-small-text {
     padding: 25px;
   }
+
   .form-small-text::before {
     width: 75px;
     margin-left: -16px;
   }
+
   .form-small-text::after {
     width: 75px;
   }
@@ -479,6 +481,7 @@ body {
   .input-form-info {
     padding: 17px 15px 8px 10px;
   }
+
   .main-secondary-form-text {
     padding-top: 25px;
   }
