@@ -85,6 +85,7 @@ body {
 }
 
 .main-form-title {
+  font-weight: 400;
   font-size: 24px;
   color: #2A4A5C;
   padding-bottom: 15px;
@@ -210,6 +211,7 @@ body {
 }
 
 .main-form-secondary-title {
+  font-weight: 400;
   color: #2A4A5C;
   font-size: 22px;
 }
