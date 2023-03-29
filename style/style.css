@@ -55,18 +55,18 @@ body {
   background-size: contain;
 }
 
-.main-logo-title {
+.main-logo__title {
   color: #fff;
   font-size: 42px;
   letter-spacing: -2px;
   font-weight: 400;
 }
 
-.logo-double-zero {
+.main-logo__double-zero {
   letter-spacing: -7px;
 }
 
-.logo-text-wrapper {
+.main-logo__text-wrapper {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ body {
   padding-left: 10px;
 }
 
-.logo-text {
+.main-logo__text {
   color: #fff;
   font-size: 10px;
 }
@@ -84,26 +84,26 @@ body {
   width: 600px;
 }
 
-.main-form-title {
+.main-form__title {
   font-weight: 400;
   font-size: 24px;
   color: #2A4A5C;
   padding-bottom: 15px;
 }
 
-.main-form-desc {
+.main-form__desc {
   font-size: 14px;
   color: #7B8A92;
   padding-bottom: 50px;
 }
 
-.form-buttons {
+.main-form__buttons {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.form-button-facebook {
+.main-form__button-facebook {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -115,16 +115,16 @@ body {
   transition: all 0.2s;
 }
 
-.form-button-facebook:hover {
+.main-form__button-facebook:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.form-button-facebook:active {
+.main-form__button-facebook:active {
   background-color: #0076B6;
 }
 
-.form-button-linkedin {
+.main-form__button-linkedin {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -136,22 +136,22 @@ body {
   transition: all 0.2s;
 }
 
-.form-button-linkedin:hover {
+.main-form__button-linkedin:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.form-button-linkedin:active {
+.main-form__button-linkedin:active {
   background-color: #255A9B;
 }
 
-.form-small-text {
+.main-form__text-small {
   padding: 40px;
   font-size: 12px;
   color: #2A4A5C;
 }
 
-.form-small-text::before {
+.main-form__text-small::before {
   content: "";
   width: 100px;
   height: 2px;
@@ -162,7 +162,7 @@ body {
   margin-left: 125px;
 }
 
-.form-small-text::after {
+.main-form__text-small::after {
   content: "";
   width: 100px;
   height: 2px;
@@ -172,33 +172,18 @@ body {
   margin-left: 10px;
 }
 
-.form-inputs {
+.main-form__inputs {
   display: flex;
   gap: 30px;
 }
 
-.input-form-info {
-  padding: 20px 82px 8px 10px;
-  border: 1px solid #EFF6FF;
-  transition: all 0.1s;
-}
-
-.input-form-info:focus {
-  outline: none;
-  border-left: 1px solid #3698FB;
-}
-
-.input-form-info:hover {
-  cursor: pointer;
-}
-
-.input-form-email,
-.input-form-phone {
+.main-form__email,
+.main-form__phone {
   position: relative;
 }
 
-.input-form-email-span,
-.input-form-phone-span {
+.main-form__email-desc,
+.main-form__phone-desc {
   position: absolute;
   top: 2px;
   left: 10px;
@@ -206,41 +191,56 @@ body {
   font-size: 14px;
 }
 
-.main-secondary-form-text {
+.main-form__input-info {
+  padding: 20px 82px 8px 10px;
+  border: 1px solid #EFF6FF;
+  transition: all 0.1s;
+}
+
+.main-form__input-info:focus {
+  outline: none;
+  border-left: 1px solid #3698FB;
+}
+
+.main-form__input-info:hover {
+  cursor: pointer;
+}
+
+.main-form__title-text--secondary {
   padding-top: 40px;
 }
 
-.main-form-secondary-title {
+.main-form__title-secondary {
   font-weight: 400;
   color: #2A4A5C;
   font-size: 22px;
 }
 
-.main-form-secondary-desc {
+.main-form__title-secondary--desc {
   padding-top: 10px;
   padding-bottom: 40px;
   color: #7B8A92;
   font-size: 14px;
 }
 
-.form-checkbox-container {
+.main-form__checkbox-container {
   display: flex;
   gap: 50px;
 }
 
-.info-icon {
-  width: 12px;
-  height: 12px;
-}
-
-.radio-label {
+.checkbox-input__radio-label {
   padding-left: 10px;
   font-weight: 500;
   color: #2A4A5C;
   font-size: 18px;
 }
 
-.form-text-features {
+.checkbox-input__info-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.main-form__text-features {
   font-size: 14px;
   font-weight: 200;
   margin-top: 25px;
@@ -251,22 +251,22 @@ body {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.form-confirming {
+.main-form__confirm {
   margin-top: 50px;
   display: flex;
   gap: 10px;
 }
 
-.confirming-text {
+.main-form__confirm-text {
   color: #AFAFAF;
   font-size: 16px;
 }
 
-.link-confirming {
+.main-form__confirm-link {
   color: #3698FB;
 }
 
-.button-confirm {
+.main-form__button-confirm {
   background-color: #3698FB;
   color: #fff;
   border: none;
@@ -279,13 +279,13 @@ body {
   margin-bottom: 80px;
 }
 
-.button-confirm:hover {
+.main-form__button-confirm:hover {
   cursor: pointer;
   background-color: #fff;
   color: #3698FB;
 }
 
-.button-confirm:active {
+.main-form__button-confirm:active {
   transform: scale(1.1);
 }
 
@@ -303,20 +303,20 @@ body {
     background-size: cover;
   }
 
-  .main-logo-title {
+  .main-logo__title {
     font-size: 38px;
   }
 
-  .logo-double-zero {
+  .main-logo__double-zero {
     letter-spacing: -4px;
   }
 
-  .logo-text-wrapper {
+  .main-logo__text-wrapper {
     padding-top: 18px;
     padding-left: 7px;
   }
 
-  .logo-text {
+  .main-logo__text {
     font-size: 8px;
   }
 
@@ -326,85 +326,85 @@ body {
     padding-left: 10px;
   }
 
-  .main-form-title {
+  .main-form__title {
     font-size: 26px;
     padding-bottom: 14px;
   }
 
-  .main-form-desc {
+  .main-form__desc {
     font-size: 18px;
     padding-bottom: 40px;
   }
 
-  .form-buttons {
+  .main-form__buttons {
     gap: 20px;
   }
 
-  .form-button-facebook {
+  .main-form__button-facebook {
     gap: 8px;
     font-size: 12px;
     padding: 15px 50px 15px 15px;
   }
 
-  .form-button-linkedin {
+  .main-form__button-linkedin {
     gap: 8px;
     font-size: 12px;
     padding: 15px 50px 15px 15px;
   }
 
-  .form-small-text {
+  .main-form__text-small {
     padding: 50px;
   }
 
-  .form-small-text::before {
+  .main-form__text-small::before {
     margin-left: 60px;
   }
 
-  .form-inputs {
+  .main-form__inputs {
     gap: 20px;
   }
 
-  .input-form-info {
+  .main-form__input-info {
     padding: 17px 35px 8px 10px;
   }
 
-  .main-secondary-form-text {
+  .main-form__title-text--secondary {
     padding-top: 50px;
   }
 
-  .main-form-secondary-title {
+  .main-form__title-secondary {
     font-size: 18px;
   }
 
-  .main-form-secondary-desc {
+  .main-form__title-secondary--desc {
     font-size: 12px;
   }
 
-  .form-checkbox-container {
+  .main-form__checkbox-container {
     gap: 20px;
   }
 
-  .radio-label {
+  .checkbox-input__radio-label {
     font-size: 18px;
   }
 
-  .form-text-features {
+  .main-form__text-features {
     font-size: 11px;
     margin-top: 20px;
     width: 200px;
     padding: 8px;
   }
 
-  .form-confirming {
+  .main-form__confirm {
     margin-top: 50px;
     gap: 8px;
   }
 
-  .confirming-text {
+  .main-form__confirm-text {
     font-size: 12px;
   }
 
-  .button-confirm {
+  .main-form__button-confirm {
     font-size: 15px;
     margin-top: 50px;
     padding: 15px 55px 15px 55px;
@@ -417,20 +417,20 @@ body {
   }
 
   .main-logo {
-    width: 375px;
+    max-width: 350px;
     background-position-x: -100px;
   }
 
-  .main-logo-title {
+  .main-logo__title {
     font-size: 24px;
   }
 
-  .logo-text-wrapper {
+  .main-logo__text-wrapper {
     padding-top: 9px;
     padding-left: 5px;
   }
 
-  .logo-text {
+  .main-logo__text {
     font-size: 6px;
   }
 
@@ -439,90 +439,90 @@ body {
     width: 300px;
   }
 
-  .main-form-title {
+  .main-form__title {
     font-size: 20px;
     padding-bottom: 10px;
   }
 
-  .main-form-desc {
+  .main-form__desc {
     font-size: 13px;
     padding-bottom: 20px;
   }
 
-  .form-buttons {
+  .main-form__buttons {
     gap: 17px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .form-button-facebook {
+  .main-form__button-facebook {
     gap: 7px;
     font-size: 12px;
-    padding: 10px 40px 10px 10px;
+    padding: 10px 60px 10px 60px;
   }
 
-  .form-button-linkedin {
+  .main-form__button-linkedin {
     gap: 7px;
     font-size: 12px;
-    padding: 10px 40px 10px 18px;
+    padding: 10px 68px 10px 60px;
   }
 
-  .form-small-text {
-    padding: 25px;
+  .main-form__text-small {
+    padding-left: 63px;
   }
 
-  .form-small-text::before {
+  .main-form__text-small::before {
     width: 75px;
     margin-left: -16px;
   }
 
-  .form-small-text::after {
+  .main-form__text-small::after {
     width: 75px;
   }
 
-  .form-inputs {
+  .main-form__inputs {
     flex-wrap: wrap;
     gap: 17px;
   }
 
-  .input-form-info {
-    padding: 17px 15px 8px 10px;
+  .main-form__input-info {
+    padding: 17px 90px 8px 10px;
   }
 
-  .main-secondary-form-text {
+  .main-form__title-text--secondary {
     padding-top: 25px;
   }
 
-  .main-form-secondary-title {
+  .main-form__title-secondary {
     font-size: 16px;
   }
 
-  .main-form-secondary-desc {
+  .main-form__title-secondary--desc {
     font-size: 11px;
   }
 
-  .form-checkbox-container {
+  .main-form__checkbox-container {
     gap: 5px;
   }
 
-  .radio-label {
+  .checkbox-input__radio-label {
     padding-left: 2px;
     font-size: 10px;
   }
 
-  .form-text-features {
-    width: 175px;
+  .main-form__text-features {
+    width: 250px;
     padding: 6px;
   }
 
-  .confirming-text {
+  .main-form__confirm-text {
     font-size: 11px;
   }
 
-  .button-confirm {
+  .main-form__button-confirm {
     font-size: 13px;
     margin-top: 40px;
-    padding: 15px 50px 15px 50px;
+    padding: 15px 90px 15px 90px;
   }
 }
 
@@ -545,57 +545,53 @@ body {
     padding-left: 15px;
   }
 
-  .form-button-facebook {
+  .main-form__button-facebook {
     gap: 5px;
     font-size: 11px;
     padding: 10px 14px 10px 10px;
   }
 
-  .form-button-linkedin {
+  .main-form__button-linkedin {
     gap: 5px;
     font-size: 11px;
     padding: 10px 14px 10px 10px;
   }
 
-  .form-small-text::before {
-    margin-left: 55px;
+  .main-form__text-small {
+    padding-left: 95px;
   }
 
-  .form-inputs {
+  .main-form__inputs {
     flex-wrap: wrap;
   }
 
-  .input-form-info {
+  .main-form__input-info {
     padding: 20px 165px 8px 10px;
   }
 
-  .form-checkbox-container {
+  .main-form__checkbox-container {
     gap: 8px;
   }
 
-  .radio-label {
+  .checkbox-input__radio-label {
     padding-left: 5px;
     font-size: 15px;
   }
 
-  .form-text-features {
+  .main-form__text-features {
     font-size: 16px;
     font-weight: 200;
     width: 320px;
     padding: 10px;
   }
 
-  .confirming-text {
+  .main-form__confirm-text {
     color: #AFAFAF;
     font-size: 16px;
   }
 
-  .button-confirm {
-
+  .main-form__button-confirm {
     font-size: 18px;
-
     padding: 15px 105px 15px 105px;
-
-
   }
 }
